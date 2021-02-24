@@ -12,6 +12,8 @@ plvar1--->x
 
 local_28--->msg
 
+![Image](welcome.png)
+
 From this program,we can clearly see that, *x=1 is set initially
 
 We need to make *x=0 to get the flag
