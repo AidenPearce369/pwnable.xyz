@@ -1,0 +1,8 @@
+x=y=0x1336
+while x < 0x1337:
+	while y < 0x1337:
+		if(x-y==0x1337):
+			print(x,y)
+		y=y-0x1
+	x=x-0x1
+print('Done')
