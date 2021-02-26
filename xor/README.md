@@ -137,7 +137,7 @@ In this case we need to see that we have the permission to write in the memory o
 
 Run the program and cause some interrupt
 
-Run vmmap in gdb-ped
+Run vmmap in gdb-peda
 
 OR
 
