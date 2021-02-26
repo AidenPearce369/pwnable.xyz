@@ -129,6 +129,34 @@ We need to pass x^y values correctly , so that this xor result will overwrite th
 
 -----
 
+How did we come to know that we can overwrite 'call exit()'? (VALID QUESTION)
+
+In this case we need to see that we have the permission to write in the memory or not
+
+![Image](vmmap.png)
+
+Run the program and cause some interrupt
+
+Run vmmap in gdb-ped
+
+OR
+
+In terminal,
+
+```
+$./challenge &
+[Gives a PID]
+$cat /proc/[PID]/maps
+```
+
+We can see that we have rwxp on the first line, which is in the memory range of 4000-5000
+
+Clearly our main program lies within this range
+
+So we can conclude that we have write permission over this area and we can overwrite any instructions
+
+-----
+
 We know win() function is at 0xa21
 
 To get the exact value of the instrcution in hex,int data
