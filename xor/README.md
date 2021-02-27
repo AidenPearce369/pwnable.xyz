@@ -183,7 +183,7 @@ xor of same values are 0
 
 xor(a,a)=0
 
-xor(a+1,1)=a
+xor(a,0)=a
 
 So to pass the value for inputs to overwrite the instruction
 
